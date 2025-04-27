@@ -1,0 +1,1 @@
+Ongoing list for useful resources + reading material I will be exploring

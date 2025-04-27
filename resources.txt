@@ -1,0 +1,54 @@
+Template
+###################################
+Title: 
+Link:
+Comment:
+
+###################################
+Title: LeaF: Learning Frames for 4D Point Cloud Sequence Understanding
+Link: https://openaccess.thecvf.com/content/ICCV2023/papers/Liu_LeaF_Learning_Frames_for_4D_Point_Cloud_Sequence_Understanding_ICCV_2023_paper.pdf
+Comment: 
+Gold so far. found HOI4D action segmentation dataset + MAR-Action3D dataset
+
+###################################
+Title: Semantic-based point cloud tasks
+Link: https://github.com/Jasmine-tjy/Semantic-based-Point-Cloud-Tasks/
+Comment:
+Many resources
+
+###################################
+Title: 
+Link: 
+https://arxiv.org/pdf/2406.19353
+https://github.com/leolyliu/CORE4D-Instructions
+
+Comment:
+From Li Yi, author of LeaF - 
+Informative for setting up human-object interaction dataset
+
+###################################
+Title: X4D-SceneFormer: Enhanced Scene Understanding on 4D Point Cloud Videos through Cross-modal Knowledge Transfer
+Link: https://arxiv.org/html/2312.07378v1
+Comment:
+Useful example of model submission to HOI4D competition
+
+###################################
+Title: py4dgeo - A Python library for change analysis in 4D point clouds
+Link: https://github.com/3dgeo-heidelberg/py4dgeo
+Comment:
+Not immediately useful for indoor scenes, but good resource on 4D point cloud processing
+
+###################################
+Title: Semantic Complete Scene Forecasting from a 4D Dynamic Point Cloud Sequence
+Link: https://arxiv.org/pdf/2312.08054
+Comment: [STAR]
+Exactly the task I am looking to solve!
+Github is no longer available
+
+###################################
+Title: Vision Transformers with Hierarchical Attention
+Link: https://yun-liu.github.io/papers/(MIR'2024)Vision%20Transformers%20with%20Hierarchical%20Attention.pdf
+Comment:
+Could be useful for hierarchical implementation of TRELLIS
+
+
