@@ -1,0 +1,92 @@
+python train_p4.py --output-dir ./output_p4_e5 --epochs 5
+Namespace(seed=0, model='P4Transformer', radius=0.9, nsamples=32, spatial_stride=32, temporal_kernel_size=3, temporal_stride=1, emb_relu=False, dim=2048, depth=5, heads=8, dim_head=128, mlp_dim=1024, batch_size=8, epochs=5, workers=10, lr=0.05, momentum=0.9, weight_decay=0.0001, lr_milestones=[20, 35], lr_gamma=0.5, lr_warmup_epochs=5, print_freq=20, output_dir='./output_pptr_e5', resume='', start_epoch=0)
+torch version:  2.7.0+cu126
+torchvision version:  0.22.0+cu126
+Loading data
+train1.h5
+test1.h5
+Creating data loaders
+Creating model
+Start training
+Epoch: [0]  [ 0/94]  eta: 0:03:45  lr: 5.000000000000001e-07  clips/s: 5.046  loss: 2.9134 (2.9134)  acc: 0.0425 (0.0425)  time: 2.3936  data: 0.8081  max mem: 8220
+Epoch: [0]  [20/94]  eta: 0:01:03  lr: 0.0021281382978723404  clips/s: 10.191  loss: 2.4907 (2.5504)  acc: 0.1933 (0.1787)  time: 0.7856  data: 0.0002  max mem: 8734
+Epoch: [0]  [40/94]  eta: 0:00:44  lr: 0.004255776595744681  clips/s: 10.188  loss: 2.1732 (2.3754)  acc: 0.2542 (0.2126)  time: 0.7855  data: 0.0002  max mem: 8734
+Epoch: [0]  [60/94]  eta: 0:00:27  lr: 0.006383414893617021  clips/s: 10.185  loss: 2.0341 (2.2726)  acc: 0.2742 (0.2327)  time: 0.7856  data: 0.0002  max mem: 8734
+Epoch: [0]  [80/94]  eta: 0:00:11  lr: 0.008511053191489362  clips/s: 10.194  loss: 1.9627 (2.2091)  acc: 0.2850 (0.2473)  time: 0.7855  data: 0.0001  max mem: 8735
+Epoch: [0] Total time: 0:01:15
+Test:  [ 0/63]  eta: 0:01:02  loss: 2.0681 (2.0681)  acc: 0.2275 (0.2275)  time: 0.9970  data: 0.3738  max mem: 8735
+/home/ubuntu/pc/HOI4D_ActionSeg/train_p4.py:90: RuntimeWarning: invalid value encountered in divide
+  IoU = (1.0*intersection / union)*([p_label[j] == y_label[x] for x in range(len(y_label))])
+Test:  [20/63]  eta: 0:00:27  loss: 1.9784 (2.0679)  acc: 0.2650 (0.2667)  time: 0.6239  data: 0.0002  max mem: 8735
+Test:  [40/63]  eta: 0:00:14  loss: 1.9850 (2.0706)  acc: 0.2675 (0.2649)  time: 0.6210  data: 0.0002  max mem: 8735
+Test:  [60/63]  eta: 0:00:01  loss: 1.8307 (2.0375)  acc: 0.2975 (0.2788)  time: 0.6208  data: 0.0001  max mem: 8735
+Test: Total time: 0:00:39
+Edit: 29.1652
+F1@0.10: 23.3138
+F1@0.25: 16.5340
+F1@0.50: 9.6487
+total acc: 0.27481481481481485
+Epoch: [1]  [ 0/94]  eta: 0:02:14  lr: 0.010000400000000001  clips/s: 10.048  loss: 1.9644 (1.9644)  acc: 0.3575 (0.3575)  time: 1.4287  data: 0.6325  max mem: 8735
+Epoch: [1]  [20/94]  eta: 0:01:00  lr: 0.01212803829787234  clips/s: 10.189  loss: 1.9467 (1.9643)  acc: 0.3275 (0.3228)  time: 0.7854  data: 0.0002  max mem: 8735
+Epoch: [1]  [40/94]  eta: 0:00:43  lr: 0.014255676595744683  clips/s: 10.192  loss: 1.8849 (1.9404)  acc: 0.3350 (0.3284)  time: 0.7855  data: 0.0002  max mem: 8735
+Epoch: [1]  [60/94]  eta: 0:00:27  lr: 0.01638331489361702  clips/s: 10.181  loss: 1.9253 (1.9412)  acc: 0.3183 (0.3240)  time: 0.7858  data: 0.0002  max mem: 8735
+Epoch: [1]  [80/94]  eta: 0:00:11  lr: 0.01851095319148936  clips/s: 10.187  loss: 1.9595 (1.9437)  acc: 0.3117 (0.3211)  time: 0.7854  data: 0.0002  max mem: 8735
+Epoch: [1] Total time: 0:01:14
+Test:  [ 0/63]  eta: 0:01:04  loss: 2.1339 (2.1339)  acc: 0.2792 (0.2792)  time: 1.0174  data: 0.3793  max mem: 8735
+Test:  [20/63]  eta: 0:00:27  loss: 1.9551 (1.9993)  acc: 0.3258 (0.3251)  time: 0.6258  data: 0.0002  max mem: 8735
+Test:  [40/63]  eta: 0:00:14  loss: 1.9493 (1.9931)  acc: 0.3258 (0.3262)  time: 0.6278  data: 0.0002  max mem: 8735
+Test:  [60/63]  eta: 0:00:01  loss: 1.9667 (1.9938)  acc: 0.2642 (0.3089)  time: 0.6263  data: 0.0001  max mem: 8735
+Test: Total time: 0:00:39
+Edit: 28.1300
+F1@0.10: 24.0834
+F1@0.25: 17.4135
+F1@0.50: 10.0805
+total acc: 0.30641534391534386
+Epoch: [2]  [ 0/94]  eta: 0:02:02  lr: 0.020000300000000002  clips/s: 10.112  loss: 1.8184 (1.8184)  acc: 0.3650 (0.3650)  time: 1.3055  data: 0.5143  max mem: 8735
+Epoch: [2]  [20/94]  eta: 0:00:59  lr: 0.022127938297872338  clips/s: 10.182  loss: 1.9118 (1.9179)  acc: 0.3050 (0.3146)  time: 0.7858  data: 0.0002  max mem: 8735
+Epoch: [2]  [40/94]  eta: 0:00:43  lr: 0.02425557659574468  clips/s: 10.187  loss: 1.8472 (1.8970)  acc: 0.3300 (0.3190)  time: 0.7858  data: 0.0002  max mem: 8735
+Epoch: [2]  [60/94]  eta: 0:00:27  lr: 0.02638321489361702  clips/s: 10.186  loss: 1.9146 (1.9037)  acc: 0.3383 (0.3249)  time: 0.7859  data: 0.0002  max mem: 8735
+Epoch: [2]  [80/94]  eta: 0:00:11  lr: 0.02851085319148937  clips/s: 10.181  loss: 1.9129 (1.9194)  acc: 0.3167 (0.3213)  time: 0.7860  data: 0.0002  max mem: 8735
+Epoch: [2] Total time: 0:01:14
+Test:  [ 0/63]  eta: 0:01:02  loss: 1.9320 (1.9320)  acc: 0.2700 (0.2700)  time: 0.9957  data: 0.3717  max mem: 8735
+Test:  [20/63]  eta: 0:00:27  loss: 1.9684 (2.0363)  acc: 0.2283 (0.2417)  time: 0.6215  data: 0.0003  max mem: 8735
+Test:  [40/63]  eta: 0:00:14  loss: 1.9640 (2.0513)  acc: 0.2633 (0.2554)  time: 0.6178  data: 0.0002  max mem: 8735
+Test:  [60/63]  eta: 0:00:01  loss: 1.8613 (2.0311)  acc: 0.3358 (0.2782)  time: 0.6195  data: 0.0001  max mem: 8735
+Test: Total time: 0:00:39
+Edit: 33.2603
+F1@0.10: 25.1477
+F1@0.25: 18.0980
+F1@0.50: 10.4122
+total acc: 0.2741269841269841
+Epoch: [3]  [ 0/94]  eta: 0:02:07  lr: 0.0300002  clips/s: 10.049  loss: 1.7941 (1.7941)  acc: 0.3175 (0.3175)  time: 1.3529  data: 0.5567  max mem: 8735
+Epoch: [3]  [20/94]  eta: 0:01:00  lr: 0.032127838297872344  clips/s: 10.184  loss: 1.8877 (1.9248)  acc: 0.3292 (0.3209)  time: 0.7860  data: 0.0002  max mem: 8737
+Epoch: [3]  [40/94]  eta: 0:00:43  lr: 0.03425547659574468  clips/s: 10.179  loss: 1.8490 (1.8928)  acc: 0.3308 (0.3257)  time: 0.7860  data: 0.0002  max mem: 8737
+Epoch: [3]  [60/94]  eta: 0:00:27  lr: 0.03638311489361703  clips/s: 10.181  loss: 1.8373 (1.8785)  acc: 0.3283 (0.3316)  time: 0.7860  data: 0.0002  max mem: 8737
+Epoch: [3]  [80/94]  eta: 0:00:11  lr: 0.03851075319148936  clips/s: 10.181  loss: 1.8134 (1.8685)  acc: 0.3550 (0.3362)  time: 0.7860  data: 0.0001  max mem: 8737
+Epoch: [3] Total time: 0:01:14
+Test:  [ 0/63]  eta: 0:01:03  loss: 2.0750 (2.0750)  acc: 0.2558 (0.2558)  time: 1.0097  data: 0.3797  max mem: 8737
+Test:  [20/63]  eta: 0:00:27  loss: 1.9835 (2.0416)  acc: 0.3000 (0.3011)  time: 0.6212  data: 0.0002  max mem: 8737
+Test:  [40/63]  eta: 0:00:14  loss: 1.9935 (2.0650)  acc: 0.3283 (0.3121)  time: 0.6216  data: 0.0002  max mem: 8737
+Test:  [60/63]  eta: 0:00:01  loss: 2.0262 (2.1007)  acc: 0.3325 (0.3161)  time: 0.6210  data: 0.0001  max mem: 8737
+Test: Total time: 0:00:39
+Edit: 36.7989
+F1@0.10: 31.4415
+F1@0.25: 24.1087
+F1@0.50: 13.0917
+total acc: 0.3133862433862434
+Epoch: [4]  [ 0/94]  eta: 0:02:10  lr: 0.040000100000000004  clips/s: 10.045  loss: 1.8106 (1.8106)  acc: 0.3667 (0.3667)  time: 1.3936  data: 0.5971  max mem: 8737
+Epoch: [4]  [20/94]  eta: 0:01:00  lr: 0.04212773829787234  clips/s: 10.188  loss: 1.8683 (1.8519)  acc: 0.3392 (0.3463)  time: 0.7919  data: 0.0002  max mem: 8737
+Epoch: [4]  [40/94]  eta: 0:00:43  lr: 0.04425537659574468  clips/s: 10.185  loss: 1.7549 (1.8298)  acc: 0.3725 (0.3595)  time: 0.7859  data: 0.0002  max mem: 8737
+Epoch: [4]  [60/94]  eta: 0:00:27  lr: 0.04638301489361702  clips/s: 10.158  loss: 1.7878 (1.8219)  acc: 0.3683 (0.3601)  time: 0.7861  data: 0.0002  max mem: 8737
+Epoch: [4]  [80/94]  eta: 0:00:11  lr: 0.04851065319148937  clips/s: 10.184  loss: 1.8377 (1.8280)  acc: 0.3558 (0.3592)  time: 0.7859  data: 0.0001  max mem: 8737
+Epoch: [4] Total time: 0:01:14
+Test:  [ 0/63]  eta: 0:01:03  loss: 1.8821 (1.8821)  acc: 0.3808 (0.3808)  time: 1.0132  data: 0.3846  max mem: 8737
+Test:  [20/63]  eta: 0:00:27  loss: 2.1651 (2.2037)  acc: 0.3117 (0.3186)  time: 0.6220  data: 0.0002  max mem: 8737
+Test:  [40/63]  eta: 0:00:14  loss: 2.1018 (2.2287)  acc: 0.3017 (0.3147)  time: 0.6222  data: 0.0002  max mem: 8737
+Test:  [60/63]  eta: 0:00:01  loss: 2.0254 (2.2267)  acc: 0.3717 (0.3259)  time: 0.6213  data: 0.0001  max mem: 8737
+Test: Total time: 0:00:39
+Edit: 40.5997
+F1@0.10: 36.4639
+F1@0.25: 26.8826
+F1@0.50: 12.3844
+total acc: 0.32246031746031745
