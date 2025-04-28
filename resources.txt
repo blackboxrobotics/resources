@@ -11,6 +11,15 @@ Comment:
 Gold so far. found HOI4D action segmentation dataset + MAR-Action3D dataset
 
 ###################################
+Title: HOI4D: A 4D Egocentric Dataset for Category-Level Human-Object Interaction
+Link:
+https://hoi4d.github.io/
+https://github.com/hoi4d/HOI4D_ActionSeg
+https://github.com/hoi4d/HOI4D_semseg
+Comment:
+Tested output with given example models (P4Transformer and PPTr) on Lambda Labs A100
+
+###################################
 Title: Semantic-based point cloud tasks
 Link: https://github.com/Jasmine-tjy/Semantic-based-Point-Cloud-Tasks/
 Comment:
@@ -51,4 +60,9 @@ Link: https://yun-liu.github.io/papers/(MIR'2024)Vision%20Transformers%20with%20
 Comment:
 Could be useful for hierarchical implementation of TRELLIS
 
+###################################
+Title: Point 4D Transformer Networks for Spatio-Temporal Modeling in Point Cloud Videos
+Link: https://github.com/hehefan/P4Transformer
+Comment:
+4D convolution + transformer to model point cloud videos (4DPC)
 
