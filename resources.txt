@@ -66,3 +66,13 @@ Link: https://github.com/hehefan/P4Transformer
 Comment:
 4D convolution + transformer to model point cloud videos (4DPC)
 
+###################################
+Title: Implicit Neural Compression of Point Clouds
+Link: 
+https://arxiv.org/html/2412.10433v1
+https://github.com/RhoHenning/INR-PCC
+
+Comment:
+- storage of 4D point clouds will be immense cost
+- compress 4dpc into neural representation of "voxelized" point cloud 
+- GitHub link is for a predecessor to this paper from same authors
